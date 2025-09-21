@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>บริการ</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div id="title">บริการ</div>
+    <div class="lang-toggle" id="langToggle">EN</div>
+  </header>
+
+  <!-- Services -->
+  <div class="services">
+    <!-- Category: Basic Cleaning -->
+    <div class="category-block">
+      <div class="category-title" data-key="washCat">
+        ✨ Basic Cleaning (ล้าง/ดูดฝุ่น/อัดฉีด/ห้องเครื่อง)
+      </div>
+
+      <!-- ล้างรถ ดูดฝุ่น -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="wash1" data-key="washVacuum">
+          <span>ล้างรถ ดูดฝุ่น</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="wash1">
+          <label data-key="washVacuumM"><span>M</span><span>250 THB</span>
+            <input type="checkbox" class="service-check" name="wash1" value="250"
+              data-label-th="ล้างรถ ดูดฝุ่น M"
+              data-label-en="Wash & Vacuum M">
+          </label>
+          <label data-key="washVacuumL"><span>L</span><span>300 THB</span>
+            <input type="checkbox" class="service-check" name="wash1" value="300"
+              data-label-th="ล้างรถ ดูดฝุ่น L"
+              data-label-en="Wash & Vacuum L">
+          </label>
+          <label data-key="washVacuumXL"><span>XL</span><span>500 THB</span>
+            <input type="checkbox" class="service-check" name="wash1" value="500"
+              data-label-th="ล้างรถ ดูดฝุ่น XL"
+              data-label-en="Wash & Vacuum XL">
+          </label>
+        </div>
+      </div>
+
+      <!-- ล้างอัดฉีด -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="wash2" data-key="washPressure">
+          <span>ล้างอัดฉีด</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="wash2">
+          <label data-key="washPressureM"><span>M</span><span>300 THB</span>
+            <input type="checkbox" class="service-check" name="wash2" value="300"
+              data-label-th="ล้างอัดฉีด M"
+              data-label-en="Pressure Wash M">
+          </label>
+          <label data-key="washPressureL"><span>L</span><span>400 THB</span>
+            <input type="checkbox" class="service-check" name="wash2" value="400"
+              data-label-th="ล้างอัดฉีด L"
+              data-label-en="Pressure Wash L">
+          </label>
+          <label data-key="washPressureXL"><span>XL</span><span>600 THB</span>
+            <input type="checkbox" class="service-check" name="wash2" value="600"
+              data-label-th="ล้างอัดฉีด XL"
+              data-label-en="Pressure Wash XL">
+          </label>
+        </div>
+      </div>
+
+      <!-- ล้างห้องเครื่อง -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="wash3" data-key="washEngine">
+          <span>ล้างห้องเครื่อง</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="wash3">
+          <label data-key="washEngineM"><span>M</span><span>600 THB</span>
+            <input type="checkbox" class="service-check" name="wash3" value="600"
+              data-label-th="ล้างห้องเครื่อง M"
+              data-label-en="Engine Bay Cleaning M">
+          </label>
+          <label data-key="washEngineL"><span>L</span><span>700 THB</span>
+            <input type="checkbox" class="service-check" name="wash3" value="700"
+              data-label-th="ล้างห้องเครื่อง L"
+              data-label-en="Engine Bay Cleaning L">
+          </label>
+          <label data-key="washEngineXL"><span>XL</span><span>800 THB</span>
+            <input type="checkbox" class="service-check" name="wash3" value="800"
+              data-label-th="ล้างห้องเครื่อง XL"
+              data-label-en="Engine Bay Cleaning XL">
+          </label>
+        </div>
+      </div>
+
+      <!-- ล้างยางมะตอย -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="wash4" data-key="washAsphalt">
+          <span>ล้างยางมะตอย</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="wash4">
+          <label data-key="washAsphaltM"><span>M</span><span>800 THB</span>
+            <input type="checkbox" class="service-check" name="wash4" value="800"
+              data-label-th="ล้างยางมะตอย M"
+              data-label-en="Tar Removal M">
+          </label>
+          <label data-key="washAsphaltL"><span>L</span><span>900 THB</span>
+            <input type="checkbox" class="service-check" name="wash4" value="900"
+              data-label-th="ล้างยางมะตอย L"
+              data-label-en="Tar Removal L">
+          </label>
+          <label data-key="washAsphaltXL"><span>XL</span><span>1000 THB</span>
+            <input type="checkbox" class="service-check" name="wash4" value="1000"
+              data-label-th="ล้างยางมะตอย XL"
+              data-label-en="Tar Removal XL">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: Interior Care -->
+    <div class="category-block">
+      <div class="category-title" data-key="seatCat">
+        🛋️ Interior Care (ฟอกเบาะ / ฟอกพรม)
+      </div>
+
+      <!-- ฟอกเบาะ -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="seat" data-key="seatClean">
+          <span>ฟอกเบาะ</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="seat">
+          <label data-key="seatCleanM"><span>M</span><span>3000 THB</span>
+            <input type="checkbox" class="service-check" name="seat" value="3000"
+              data-label-th="ฟอกเบาะ M"
+              data-label-en="Seat Cleaning M">
+          </label>
+          <label data-key="seatCleanL"><span>L</span><span>3500 THB</span>
+            <input type="checkbox" class="service-check" name="seat" value="3500"
+              data-label-th="ฟอกเบาะ L"
+              data-label-en="Seat Cleaning L">
+          </label>
+          <label data-key="seatCleanXL"><span>XL</span><span>4000 THB</span>
+            <input type="checkbox" class="service-check" name="seat" value="4000"
+              data-label-th="ฟอกเบาะ XL"
+              data-label-en="Seat Cleaning XL">
+          </label>
+        </div>
+      </div>
+
+      <!-- ฟอกพรม -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="carpet" data-key="carpetClean">
+          <span>ฟอกพรม</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="carpet">
+          <label data-key="carpetCleanM"><span>M</span><span>2500 THB</span>
+            <input type="checkbox" class="service-check" name="carpet" value="2500"
+              data-label-th="ฟอกพรม M"
+              data-label-en="Carpet Cleaning M">
+          </label>
+          <label data-key="carpetCleanL"><span>L</span><span>3000 THB</span>
+            <input type="checkbox" class="service-check" name="carpet" value="3000"
+              data-label-th="ฟอกพรม L"
+              data-label-en="Carpet Cleaning L">
+          </label>
+          <label data-key="carpetCleanXL"><span>XL</span><span>3500 THB</span>
+            <input type="checkbox" class="service-check" name="carpet" value="3500"
+              data-label-th="ฟอกพรม XL"
+              data-label-en="Carpet Cleaning XL">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category: Premium -->
+    <div class="category-block">
+      <div class="category-title" data-key="glossCat">
+        💎 Premium (เคลือบเงาสี / เคลือบแก้วเซรามิก / ขัดเคลือบสี)
+      </div>
+
+      <!-- เคลือบเงาสี -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="gloss" data-key="gloss">
+          <span>เคลือบเงาสี</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="gloss">
+          <label data-key="glossM"><span>M</span><span>500 THB</span>
+            <input type="checkbox" class="service-check" name="gloss" value="500"
+              data-label-th="เคลือบเงาสี M"
+              data-label-en="Gloss Coating M">
+          </label>
+          <label data-key="glossL"><span>L</span><span>700 THB</span>
+            <input type="checkbox" class="service-check" name="gloss" value="700"
+              data-label-th="เคลือบเงาสี L"
+              data-label-en="Gloss Coating L">
+          </label>
+          <label data-key="glossXL"><span>XL</span><span>900 THB</span>
+            <input type="checkbox" class="service-check" name="gloss" value="900"
+              data-label-th="เคลือบเงาสี XL"
+              data-label-en="Gloss Coating XL">
+          </label>
+        </div>
+      </div>
+
+      <!-- เคลือบแก้วเซรามิก -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="ceramic" data-key="ceramic">
+          <span>เคลือบแก้วเซรามิก</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="ceramic">
+          <label data-key="ceramicM"><span>M</span><span>9000 THB</span>
+            <input type="checkbox" class="service-check" name="ceramic" value="9000"
+              data-label-th="เคลือบแก้วเซรามิก M"
+              data-label-en="Ceramic Coating M">
+          </label>
+          <label data-key="ceramicL"><span>L</span><span>9500 THB</span>
+            <input type="checkbox" class="service-check" name="ceramic" value="9500"
+              data-label-th="เคลือบแก้วเซรามิก L"
+              data-label-en="Ceramic Coating L">
+          </label>
+          <label data-key="ceramicXL"><span>XL</span><span>10000 THB</span>
+            <input type="checkbox" class="service-check" name="ceramic" value="10000"
+              data-label-th="เคลือบแก้วเซรามิก XL"
+              data-label-en="Ceramic Coating XL">
+          </label>
+        </div>
+      </div>
+
+      <!-- ขัดเคลือบสี -->
+      <div class="service-group">
+        <div class="service-header" data-toggle="polish" data-key="polish">
+          <span>ขัดเคลือบสี</span> <span class="caret">▶</span>
+        </div>
+        <div class="dropdown" id="polish">
+          <label data-key="polishM"><span>M</span><span>3000 THB</span>
+            <input type="checkbox" class="service-check" name="polish" value="3000"
+              data-label-th="ขัดเคลือบสี M"
+              data-label-en="Polish & Wax M">
+          </label>
+          <label data-key="polishL"><span>L</span><span>3500 THB</span>
+            <input type="checkbox" class="service-check" name="polish" value="3500"
+              data-label-th="ขัดเคลือบสี L"
+              data-label-en="Polish & Wax L">
+          </label>
+          <label data-key="polishXL"><span>XL</span><span>4000 THB</span>
+            <input type="checkbox" class="service-check" name="polish" value="4000"
+              data-label-th="ขัดเคลือบสี XL"
+              data-label-en="Polish & Wax XL">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Total bar -->
+  <div class="total-bar">
+    <div class="total-controls">
+      <span id="listLabel">รายการที่เลือก</span>
+      <div class="buttons-right">
+        <button id="clearAllBtn">ยกเลิกทั้งหมด</button>
+        <select id="listToggle">
+          <option value="show">แสดง</option>
+          <option value="hide" selected>ซ่อน</option>
+        </select>
+      </div>
+    </div>
+    <div class="selected-list" id="selectedList">ยังไม่ได้เลือกบริการ</div>
+    <div class="total-amount">
+      <span id="totalLabel">รวมทั้งหมด:</span>
+      <span id="total">0 THB</span>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>

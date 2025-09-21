@@ -1,0 +1,226 @@
+:root {
+  --bg: #0f1724;
+  --card: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.1);
+  --accent: #06b6d4;
+  font-family: "Inter", sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.2);
+}
+.lang-toggle {
+  cursor: pointer;
+  font-size: 14px;
+  background: var(--card);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.lang-toggle:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.services {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.category-block {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  margin-bottom: 16px;
+  padding: 12px;
+}
+.category-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-group {
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  margin: 8px 0;
+  overflow: hidden;
+}
+.service-header {
+  padding: 12px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.caret {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.caret.open {
+  transform: rotate(90deg);
+}
+
+.dropdown {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: max-height 0.35s ease;
+}
+.dropdown.open {
+  max-height: 400px;
+}
+.dropdown label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.02);
+  transition: background 0.2s;
+}
+.dropdown label:hover {
+  background: rgba(255,255,255,0.08);
+}
+.dropdown input {
+  margin-left: 8px;
+  transform: scale(1.2);
+}
+
+/* Total Bar */
+.total-bar {
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  background: #111827;
+  border-top: 2px solid var(--accent);
+  padding: 14px 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.total-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ปรับ dropdown (ซ่อน/แสดง) */
+#listToggle {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#listToggle option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+#listToggle:hover {
+  border-color: var(--accent);
+}
+.selected-list {
+  font-size: 14px;
+  font-weight: normal;
+  color: #e2e8f0;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+}
+.selected-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  background: rgba(255,255,255,0.05);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 8px;
+}
+/* Checkbox เป็นวงกลม */
+.service-check {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s ease;
+}
+.service-check:checked {
+  background: var(--accent);
+}
+.service-check:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+.buttons-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#clearAllBtn {
+  background: #dc2626; /* แดง */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#clearAllBtn:hover {
+  background: #ef4444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .service-header { padding: 10px; font-size: 14px; }
+  .dropdown label { padding: 10px 16px; }
+}
