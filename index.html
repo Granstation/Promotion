@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gran Station | Wash & Detailing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SCRIM -->
+  <div class="scrim" id="scrim"></div>
+
+  <!-- DRAWER (Size + Monthly Promo) -->
+  <aside class="drawer" id="drawer">
+    <div class="panel">
+      <div class="drawer-top">
+        <button class="iconbtn" id="closeDrawer" aria-label="Close">✕</button>
+        <div class="brand">Gran <b>Station</b></div>
+      </div>
+
+      <div class="menu-title" data-i18n="nav.sizes">เลือกขนาดรถ</div>
+      <div class="size-list" id="sizeList"></div>
+
+      <!-- ปุ่มเดียวตามที่ขอ -->
+      <div class="menu-title" style="margin-top:14px">โปรโมชัน</div>
+      <button class="menu-btn" id="openPromo">โปรโมชันประจำเดือน</button>
+    </div>
+  </aside>
+
+  <!-- HOME PAGE -->
+  <main id="home" class="page active">
+    <div class="topbar">
+      <button class="iconbtn" id="menuBtn" aria-label="Menu">≡</button>
+      <div class="brand">Gran <b>Station</b></div>
+      <div class="spacer"></div>
+      <button class="lang-toggle" id="langBtn" aria-label="Language">
+        <span id="langAbbr">TH</span><small id="langFull">ไทย</small>
+      </button>
+    </div>
+
+    <!-- inline tabs -->
+    <div class="tabs" id="tabs"></div>
+
+    <!-- catalog -->
+    <section class="grid" id="grid"></section>
+
+    <!-- bottom cart -->
+    <section class="cart">
+      <div class="cart-toggle" id="cartToggle">
+        <b data-i18n="cart.title">ตะกร้ารายการ</b>
+        <div><span data-i18n="cart.total">ราคารวม</span>: <b id="total">฿0</b></div>
+      </div>
+      <div class="cart-panel" id="cartPanel">
+        <!-- แถบยืนยัน/ยกเลิก ย้ายมาอยู่ในตะกร้า -->
+        <div id="confirmBar" class="confirm-bar hide">
+          <div class="confirm-title" data-i18n="cart.confirmTitle">ลบรายการทั้งหมด?</div>
+          <div class="confirm-actions">
+            <button id="confirmYes" class="primary" data-i18n="cart.confirmYes">ยืนยัน</button>
+            <button id="confirmNo" class="ghost" data-i18n="cart.confirmNo">ยกเลิก</button>
+          </div>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+        <div class="clear">
+          <button class="danger" id="clearAll" data-i18n="cart.clear">ลบรายการทั้งหมด</button>
+          <div class="muted"><span data-i18n="cart.items">จำนวน</span>: <b id="itemCount">0</b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROMO PAGE -->
+  <section id="promo" class="page">
+    <div class="topbar">
+      <button class="iconbtn" id="closePromo" aria-label="Close">✕</button>
+      <div class="brand">Gran <b>Station</b> — <span>โปรโมชันประจำเดือน</span></div>
+      <div class="spacer"></div>
+      <button class="lang-toggle" id="langBtn2" aria-label="Language">
+        <span id="langAbbr2">TH</span><small id="langFull2">ไทย</small>
+      </button>
+    </div>
+
+    <div class="promo-hero"><div class="img">🚗</div></div>
+    <div class="promo-body">
+      <h2 id="promoTitle">ล้างรถ + เคลือบสี</h2>
+      <div class="muted" id="promoDesc">โปรใช้กับลูกค้าประจำ วันนี้ – 30 มกราคม 2568</div>
+      <div class="qty">
+        <button id="pMinus">−</button><b id="pQty">1</b><button id="pPlus">＋</button>
+      </div>
+    </div>
+    <div class="promo-footer">
+      <div><span data-i18n="cart.total">ราคารวม</span>: <b id="promoPrice">฿500</b></div>
+      <button class="primary" id="promoAdd">ใส่ตะกร้า</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

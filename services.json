@@ -1,0 +1,30 @@
+[
+  {
+    "id": "wash_basic",
+    "name": { "th": "ล้างรถ (ภายนอก)", "en": "Exterior Wash" },
+    "desc": { "th": "ล้างภายนอกอย่างเดียว", "en": "Exterior only quick wash" },
+    "image": "assets/services/test.jpg",
+    "sizes": { "S": 120, "M": 150, "L": 180, "XL": 220 }
+  },
+  {
+    "id": "wash_wax",
+    "name": { "th": "ล้างรถ + เคลือบสี", "en": "Wash + Wax" },
+    "desc": { "th": "เงาวับ ปกป้องสีรถ", "en": "Glossy look with protection" },
+    "image": "assets/services/test.jpg",
+    "sizes": { "S": 300, "M": 350, "L": 420, "XL": 480 }
+  },
+  {
+    "id": "engine_clean",
+    "name": { "th": "ล้างห้องเครื่อง", "en": "Engine Bay Clean" },
+    "desc": { "th": "ทำความสะอาดละเอียด", "en": "Detailed cleaning" },
+    "image": "assets/services/test.jpg",
+    "sizes": { "S": 250, "M": 280, "L": 320, "XL": 380 }
+  },
+  {
+    "id": "interior_detail",
+    "name": { "th": "ดูดฝุ่น + อบโอโซน", "en": "Vacuum + Ozone" },
+    "desc": { "th": "ลดกลิ่นอับ ฆ่าเชื้อ", "en": "Kills odor & germs" },
+    "image": "assets/services/test.jpg",
+    "sizes": { "S": 200, "M": 250, "L": 290, "XL": 340 }
+  }
+]
